@@ -18,13 +18,14 @@
         android:layout_alignParentBottom="true"
         android:orientation="vertical">
 
-        <EditText
+        <EditText android:id="@+id/email_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:hint="@string/email"/>
-        <EditText
+        <EditText android:inputType="textPassword"
+            android:id="@+id/password_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -32,7 +33,8 @@
             android:hint="@string/password"/>
 
 
-        <Button android:text="@string/signin_email"
+        <Button android:id="@+id/email_login_button"
+            android:text="@string/signin_email"
             android:theme="@style/ButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="40dp"
