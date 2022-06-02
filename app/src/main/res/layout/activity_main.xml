@@ -8,6 +8,7 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/my_toolbar"
+        app:contentInsetStart="0dp"
         android:layout_width="match_parent"
         android:layout_height="35dp">
 
@@ -16,7 +17,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/logo_title" />
         </RelativeLayout>
@@ -32,10 +33,10 @@
 
     <FrameLayout
         android:id="@+id/main_content"
-        android:layout_below="@+id/toolbar_division"
-        android:layout_above="@+id/nav_division"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></FrameLayout>
+        android:layout_height="match_parent"
+        android:layout_above="@+id/nav_division"
+        android:layout_below="@+id/toolbar_division"></FrameLayout>
 
     <LinearLayout
         android:id="@+id/nav_division"
